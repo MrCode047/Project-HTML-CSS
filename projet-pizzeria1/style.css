@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap')
+
+* {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@keyframes show {
+    to{
+        transform: translateX(0);
+    }
+}
+
+header{
+    max-width: 100%;
+    background-image: url(images/pizzanao02gimp2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.navbar {
+    max-width: 100%;
+    padding: 2px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    transform: translateX(100%);
+    animation: show 3s forwards;
+    
+}
+
+.navbar h2 {
+    margin-left: 10px;
+    padding-right: 52vw;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+.navbar a {
+    margin-right: 2px;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding-right: 50px;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar a:hover {
+    transform: translateY(-5px);
+    transition: 1.2s;
+}
+
+.navbar button {
+    padding: 10px;
+    background-color: #DF733C;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar button:hover {
+    transform: translateY(-5px);
+    transition: 1.2s;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 165px;
+    filter: brightness(90%);
+}
+
+.h1header {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'PT Serif', serif;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
+    margin-top: 0px;
+}
+
+.h2header {
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.596);
+}
+
+.finheader {
+    max-width: 100%;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgba(46, 46, 46, 0.753);
+    padding: 3px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 95px;
+    transform: translateX(-100%);
+    animation: show 3s forwards;
+}
+
+.banner {
+    padding-top: 5px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    max-width: 1000px;
+    min-height: 170px;
+    margin-left: 170px;
+    background-color: #223646;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.banner button {
+    background-color: #DF733C;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 200px;
+    min-height: 80px;
+    border-radius: 5%;
+}
+
+.presentation h2 {
+    font-family: 'PT Serif', serif;
+    color: #4D4D4D;
+    text-align: center;
+    font-size: 40px;
+}
+
+hr {
+    display: block;
+    margin: 30px auto;
+    width: 80px;
+    height: 3px;
+    background-color: #DF733C;
+    border: none;
+}
+
+.presentation p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: 265px;
+    color: #666666;
+}
+
+.horaires {
+    padding: 1px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: #223646;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    text-align: center;
+    max-width: 500px;
+    margin-left: 410px;
+}
+
+.horaires h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 36px;
+}
+
+.horaires p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #b1b3b6;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.commande {
+    margin-bottom: 70px;
+    background-color: #2C3F4E;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+.commande h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 26px;
+    letter-spacing: 0.3px;
+}
+
+.commande p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-left: 200px;
+    margin-right: 200px;
+    letter-spacing: 0.3px;
+}
+
+.reseaux {
+    text-align: center;
+    
+}
+
+.reseaux h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 40px;
+    color: #4d4d4d;
+}
+
+.pizzas {
+    text-align: center;
+}
+
+.pizzas h2 {
+    font-family: 'PT Serif', serif;
+    font-size: 40px;
+    color: #4d4d4d;
+}
+
+img {
+    margin: 20px;
+    border-radius: 20%;
+    cursor: pointer;
+}
+
+.menu ul{
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    justify-content: center;
+}
+
+#fondpizza {
+    min-height: 500px;
+    background-image: url(images/iframepizza.jpg);
+    background-repeat: no-repeat;
+    margin-left: 300px;
+}
+
+#fond {
+    position: relative;
+    top: px;
+    width: 500px;
+    height: 500px;
+    right: 100px;
+}

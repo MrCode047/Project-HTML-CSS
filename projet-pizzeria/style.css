@@ -3,15 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
 
 * {
-    * {
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @keyframes show {
@@ -115,7 +113,7 @@ header{
 }
 
 .banner {
-    padding-top: 5px;
+    padding-top: 30px;
     margin-top: 70px;
     margin-bottom: 70px;
     max-width: 1000px;
@@ -138,6 +136,7 @@ header{
     max-width: 200px;
     min-height: 80px;
     border-radius: 5%;
+    margin-top: 20px;
 }
 
 .presentation h2 {
@@ -261,3 +260,71 @@ img {
     height: 500px;
     right: 100px;
 }
+
+.slideshow {
+    display: block;
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+  }
+  
+  .slide {
+    display: none;
+    flex: 0 0 100%;
+  }
+  
+  .slide img {
+    width: 90%;
+    height: 95vh;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  /* Révisons les sélecteurs pour cibler les diapositives correctement */
+  #slide1:checked ~ .slides #slide-1,
+  #slide2:checked ~ .slides #slide-2,
+  #slide3:checked ~ .slides #slide-3,
+  #slide4:checked ~ .slides #slide-4,
+  #slide5:checked ~ .slides #slide-5,
+  #slide6:checked ~ .slides #slide-6,
+  #slide7:checked ~ .slides #slide-7,
+  #slide8:checked ~ .slides #slide-8 
+  {
+    display: block;
+  }
+  
+  .navigation {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .navigation label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #aaa;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 5px;
+  }
+  
+  /* Sélecteurs ajustés pour mettre en surbrillance l'indicateur de navigation */
+  #slide1:checked ~ .navigation label[for="slide1"],
+  #slide2:checked ~ .navigation label[for="slide2"],
+  #slide3:checked ~ .navigation label[for="slide3"],
+  #slide4:checked ~ .navigation label[for="slide4"],
+  #slide5:checked ~ .navigation label[for="slide5"],
+  #slide6:checked ~ .navigation label[for="slide6"],
+  #slide7:checked ~ .navigation label[for="slide7"],
+  #slide8:checked ~ .navigation label[for="slide8"] 
+  {
+    background: #333;
+  }
+  

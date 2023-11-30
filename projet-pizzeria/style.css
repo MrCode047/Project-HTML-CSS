@@ -36,21 +36,20 @@ header{
 }
 
 .navbar h2 {
-    margin-left: 10px;
     padding-right: 52vw;
     color: white;
     font-weight: 600;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 25px;
 }
 .navbar a {
     margin-right: 2px;
     padding: 5px;
     text-decoration: none;
     color: white;
-    font-size: 18px;
-    padding-right: 50px;
+    font-size: 20px;
+    padding-right: 30px;
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
 }
@@ -71,7 +70,7 @@ header{
 }
 
 .navbar button:hover {
-    transform: translateY(-5px);
+    transform: scale(1.03);
     transition: 1.2s;
 }
 
@@ -85,7 +84,7 @@ header{
 .h1header {
     text-align: center;
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     font-family: 'PT Serif', serif;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.397);
     margin-top: 0px;
@@ -104,9 +103,9 @@ header{
     color: white;
     font-family: 'Open Sans', sans-serif;
     background-color: rgba(46, 46, 46, 0.753);
-    padding: 3px;
+    padding: 10px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
     margin-top: 95px;
     transform: translateX(-100%);
     animation: show 3s forwards;
@@ -118,7 +117,7 @@ header{
     margin-bottom: 70px;
     max-width: 1000px;
     min-height: 170px;
-    margin-left: 170px;
+    margin-left: 270px;
     background-color: #223646;
     font-size: 15px;
     font-family: 'Open Sans', sans-serif;
@@ -137,6 +136,10 @@ header{
     min-height: 80px;
     border-radius: 5%;
     margin-top: 20px;
+}
+
+.banner button:hover{
+    background-color: #df723cdc;
 }
 
 .presentation h2 {
@@ -160,7 +163,7 @@ hr {
     font-size: 18px;
     text-align: center;
     max-width: 800px;
-    margin-left: 265px;
+    margin-left: 360px;
     color: #666666;
 }
 
@@ -174,7 +177,7 @@ hr {
     color: white;
     text-align: center;
     max-width: 500px;
-    margin-left: 410px;
+    margin-left: 500px;
 }
 
 .horaires h2 {
@@ -279,8 +282,8 @@ img {
   }
   
   .slide img {
-    width: 90%;
-    height: 95vh;
+    width: 85%;
+    height: 90vh;
   }
   
   input[type="radio"] {
@@ -326,5 +329,14 @@ img {
   #slide8:checked ~ .navigation label[for="slide8"] 
   {
     background: #333;
+  }
+
+  footer {
+    background-color: #aaa;
+  }
+
+  footer .map {
+    display: flex;
+    justify-content: center;
   }
   

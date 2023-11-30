@@ -242,6 +242,11 @@ img {
     cursor: pointer;
 }
 
+img:hover{
+    transform: translateY(-10px);
+    transition: 1.2s;
+}
+
 .menu ul{
     text-decoration: none;
     list-style: none;

@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+div#result {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    padding: 30px;
+    margin: 0 100px;
+    text-align: center;
+    border-radius: 0 0 10% 10%;
+}
+
+div#summary {
+    padding: 10px;
+    margin: 0 100px;
+    text-align: center;
+}
